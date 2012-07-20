@@ -224,7 +224,7 @@
            return true;
         } // end of function
 
-        private static function sanitize_title_with_dashes($title, $raw_title = '', $context = 'display') {
+        private static function sanitize_title_with_dashes($title, $raw_title = '', $context = 'save') {
 	        $title = strip_tags($title);
 	        // Preserve escaped octets.
 	        $title = preg_replace('|%([a-fA-F0-9][a-fA-F0-9])|', '---$1---', $title);
